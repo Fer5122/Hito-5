@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style> body { font-family: Arial, sans-serif; padding: 20px; background-color: #fff; color: #000; } .brightness-icon { position: fixed; bottom: 20px; left: 20px; background-color: #0078d4; color: #fff; border: none; padding: 15px; border-radius: 50%; cursor: pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); font-size: 24px; } .brightness-icon:focus { outline: none; box-shadow: 0 0 0 4px rgba(0, 120, 212, 0.5); } .dark-mode { background-color: #000; color: #fff; } .high-contrast { background-color: #000; color: #fff; filter: contrast(150%); } 
+body { font-family: Arial, sans-serif; padding: 20px; } .focus-icon { position: fixed; bottom: 20px; right: 20px; background-color: #0078d4; color: #fff; border: none; padding: 10px; border-radius: 50%; cursor: pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } .focus-icon:focus { outline: none; box-shadow: 0 0 0 4px rgba(0, 120, 212, 0.5); } .focus-mode { background-color: #f0f0f0; color: #333; line-height: 1.6; }</style>
+<body>
+    <!-- Fondo de video -->
+    <video autoplay muted loop id="background-video">
+        <source src="Assets/background.mov" type="video/mp4">
+        Tu navegador no soporta videos.
+    </video>
+
+    <div class="container">
+        <!-- Sección izquierda -->
+        <div class="left-section">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="suscripcion.html"> Suscripción </a></li>
+                    <li><a href="galeria.html"> Galería</a></li>
+                    <li><a href="eventos.html"> Eventos</a></li>
+                    
+                </ul>
+                <br/>
+                <ul>
+                    <li><a href="#contacto">Disciplinas &nbsp;</a></li>
+                    <li><a href="capoeira.html">Capoeira &nbsp;</a></li>
+                    <li><a href="merch.html">Merch &nbsp;</a></li>
+                    <li><a href="contacto.html">Contactos &nbsp;</a></li>
+                </ul>
+            </nav>
+
+            <!-- Descripción del producto -->
+            <img src="Assets/product.jpeg" alt="Producto destacado">
+            <br/>
+        </div>
+
+        <!-- Sección derecha -->
+        <div class="right-section">
+            <img src="Assets/product.jpeg" alt="Producto destacado">
+        </div>
+    </div>
+    <button class="brightness-icon" aria-label="Activar modo de alto contraste" onclick="toggleBrightness()"> 🔆 </button>
+    <button class="focus-icon" aria-label="Activar modo de concentración" onclick="toggleFocusMode()"> 🔍 </button>
+    <script> let mode = 0; function toggleBrightness() { const body = document.body; if (mode === 0) { body.classList.add('dark-mode'); body.classList.remove('high-contrast'); document.querySelector('.brightness-icon').setAttribute('aria-label', 'Activar modo de alto contraste'); mode = 1; } else if (mode === 1) { body.classList.add('high-contrast'); body.classList.remove('dark-mode'); document.querySelector('.brightness-icon').setAttribute('aria-label', 'Desactivar modo de alto contraste'); mode = 2; } else { body.classList.remove('dark-mode', 'high-contrast'); document.querySelector('.brightness-icon').setAttribute('aria-label', 'Activar modo oscuro'); mode = 0; } } 
+    function toggleFocusMode() { const body = document.body; body.classList.toggle('focus-mode'); const icon = document.querySelector('.focus-icon'); if (body.classList.contains('focus-mode')) { icon.setAttribute('aria-label', 'Desactivar modo de concentración'); } else { icon.setAttribute('aria-label', 'Activar modo de concentración'); } }</script>
+</body>
+</body>
+</html>

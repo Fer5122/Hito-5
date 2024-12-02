@@ -1,0 +1,130 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #007BFF; /* Azul de fondo */
+    color: #FFD700; /* Amarillo para textos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Izquierda */
+.left {
+    flex: 4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-right: 2px solid #FFD700;
+}
+
+.call-button {
+    background-color: #FFD700;
+    color: #007BFF;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.call-button:hover {
+    background-color: #e5c800;
+}
+
+.question-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.question-form h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.question-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.question-form input,
+.question-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.question-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.submit-button {
+    background-color: #FFD700;
+    color: #007BFF;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #e5c800;
+}
+
+/* Redes sociales */
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-media a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+    transform: scale(1.2);
+}
+
+/* Derecha */
+.right {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

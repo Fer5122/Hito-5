@@ -1,0 +1,54 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #007BFF; /* Azul de fondo */
+    color: #FFD700; /* Amarillo para textos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Collage */
+.collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.media-item {
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 200px; /* Define una altura fija para los contenedores */
+}
+
+/* Estilo para imágenes y videos */
+.media-item img,
+.media-item video {
+    max-width: 100%; /* Ajusta el tamaño a su contenedor */
+    max-height: 100%; /* Asegura que no sobrepase la altura */
+    object-fit: contain; /* Mantiene la proporción dentro del contenedor */
+}

@@ -1,0 +1,233 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración general */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #007BFF; /* Fondo azul */
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sección izquierda */
+.left-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+}
+.left-section img {
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+/* Sección derecha */
+.right-section {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #FFD700; /* Navbar amarillo */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: #0056b3;
+}
+
+/* Formulario */
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Merch */
+/* Fondo de video */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Contenedor principal */
+ .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: #333;
+}
+
+/* Sección izquierda */
+.left-section {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 123, 255, 0.8); /* Azul translúcido */
+} 
+
+/* Descripción del producto */
+.product-description {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.product-description h2 {
+    margin-bottom: 15px;
+}
+.product-description button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.product-description button:hover {
+    background-color: #0056b3;
+}
+
+/* Sección derecha */
+.right-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-section img {
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+/* Suscripcion */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+
+
+/* Contenedor principal */
+
+
+/* Título */
+h1 {
+    color: #FFD700; /* Amarillo */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Fila de imágenes */
+.image-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+/* Quitar scrollbar visual */
+.image-row::-webkit-scrollbar {
+    display: none;
+}
+
+/* Tarjetas de imagen */
+.image-card {
+    flex: 0 0 auto; /* Evita que las imágenes se reduzcan */
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.image-card img {
+    max-width: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.image-card p {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
